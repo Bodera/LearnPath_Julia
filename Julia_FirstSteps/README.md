@@ -7,4 +7,4 @@
 
 ## Resources used on this chapter
 
-Login on [Julia Box](https://next.juliabox.com/) 
+Login on [Julia Box](https://juliabox.com/) and perform the activities provided in the path `tutorials/introductory-tutorials/intro-to-julia`
