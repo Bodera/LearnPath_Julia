@@ -81,11 +81,11 @@ for m ∈ 1:c, n ∈ 1:r
     B[m,n] = m * n
 end
 display(B)
-# see the way we created a multiplication table?
+# see the way we've created a multiplication table?
 println("\n", "\n", "Matrix C:")
 C = [m * n for m ∈ 1:c, n ∈ 1:r]
 display(C)
-# array comprehension is cool it isn't?
+# array comprehension. Is cool it isn't?
 # now let's mix loops and array comprehension
 println("\n", "Matrix D:")
 for count ∈ 1:10

@@ -1,5 +1,5 @@
 println("Time to practice some data structures!")
-println("We're going to study the following:\n -Dictionaries\n -Tuples\n -Arrays")
+println("We're going to study the following:\n -Dictionaries\n -Tuples\n -Arrays", "\n")
 
 # Tuples are immutable and have ordered sequences of elements (index allowed)
 tuple_sample = ("gold", "silver", "bronze")
@@ -10,20 +10,20 @@ println(tuple_sample[2])
 
 # Since Julia 1.0 we've NamedTuples, take a look at them:
 named_tuple_sample = (medal1 = "gold", medal2 = "silver", medal3 = "bronze")
-println(named_tuple_sample[1], ", ", named_tuple_sample.medal3)
+println(named_tuple_sample[1], ", ", named_tuple_sample.medal3, "\n")
 
 # Dicts are a set of related data pair, they are mutable but store unordered elements (index not allowed)
 # to create a dictionary we use the Dict() function like that:
 dict_car_plates = Dict("Volvo_V70" => "W-58917 G", "Volkswagen_Polo" => "77-BT-004", "Toyota_Alphard" => "B-116 OB", )
 
 # Dicts are formed by keys and respective values. To return a value we must pass the associated key.
-println(dict_car_plates["Volkswagen_Polo"])
+println(dict_car_plates["Volkswagen_Polo"], "\n")
 # The line below produces an error
 # println(dict_car_plates["77-BT-004"])
 
 # adding another key/value element to our dictionary
 dict_car_plates["Opel_Zafira"] = "77-XG001"
-println(dict_car_plates)
+println(dict_car_plates, "\n")
 
 # removing a key/value element of our dictionary
 pop!(dict_car_plates, "Volkswagen_Polo")
