@@ -107,16 +107,3 @@ A useful resource when your intention is to perform an operation on all elements
 println(g.(Vct_A)) # ^ 2 + 4 * x
 # is the same as
 println(broadcast(g, Vct_A)) # we can work algebraic with vector elements, but not with the vector itself!
-
-
-# Exercises
-
-# 1) Write a function add_one that adds 1 to its input.
-add_one(num::Number) = num + 1
-
-# 2) Use map or broadcast to increment every element of matrix A by 1 and assign it to a variable A1.
-A = rand(3, 3)
-A1 = map(x -> x + 1, A)
-
-# 3) Use the broadcast dot syntax to increment every element of matrix A1 by 1 and store it in variable A2
-A2 = add_one.(A1)

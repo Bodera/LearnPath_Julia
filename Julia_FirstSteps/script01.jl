@@ -40,28 +40,3 @@ println("The value of var_pow is: $var_pow")
 
 var_mod = 30 % 5
 println("The value of var_mod is: $var_mod")
-
-# Getting Started - Solving exercises
-
-#= 1)
-  convert(T, x) -Convert x to a value of type T.
-  See examples here https://docs.julialang.org/en/v1/base/base/#Base.convert
-=#
-println("Access help by typing - ? then - convert. Or simply \"?convert\"")
-
-#= 2)
-  Assign 365 to a variable named days.
-  Convert days to a float and assign it to variable days_float
-=#
-days = 365
-days_float = convert(Float32, days)
-println("$days_float is a ", typeof(days_float), " type")
-
-#= 3)
-  See what happens when running:
-  convert(Int64, "1") and convert(Int64, 1)
-=#
-println("Object \"1\" can not be converted of String to an Integer, but 1 can.")
-
-# Validation Results
-# Success! Your notebook passes all the tests.
